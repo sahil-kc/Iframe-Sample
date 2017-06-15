@@ -1,0 +1,36 @@
+$karmagreen: #3ebb95;
+
+body {
+	overflow-x: hidden !important;
+	overflow-y: auto;
+	.navbar.navbar-default {
+		background: white;
+		.navbar-brand {
+			img {
+				width: 140px;
+				top: 10px;
+				display: block;
+				left: 45%;
+				position: absolute;
+			}
+		}
+		ul.navbar-left {
+			margin-left: 10%;
+		}
+		ul.navbar-right {
+			margin-right: 10%;
+		}
+		ul {
+			li {
+				a {
+					color: $karmagreen;
+					font-weight: bold;
+
+					&:hover, &:visited, &:active {
+						color: $karmagreen;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto; }
+  body .navbar.navbar-default {
+    background: white; }
+    body .navbar.navbar-default .navbar-brand img {
+      width: 140px;
+      top: 10px;
+      display: block;
+      left: 45%;
+      position: absolute; }
+    body .navbar.navbar-default ul.navbar-left {
+      margin-left: 10%; }
+    body .navbar.navbar-default ul.navbar-right {
+      margin-right: 10%; }
+    body .navbar.navbar-default ul li a {
+      color: #3ebb95;
+      font-weight: bold; }
+      body .navbar.navbar-default ul li a:hover, body .navbar.navbar-default ul li a:visited, body .navbar.navbar-default ul li a:active {
+        color: #3ebb95; }
+
+/*# sourceMappingURL=index.css.map */
