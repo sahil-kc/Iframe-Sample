@@ -51,18 +51,27 @@
 	</nav>
 	<div class="container">
 		<div class="row"  id="wrapper">
-			<div class="col-md-4 col-lg-3 col-xs-12 col-sm-5 leftPanel" id="wasd">
+			<div class="col-md-6 col-lg-offset-2 col-lg-3 col-xs-12 col-sm-5 leftPanel" id="wasd">
 				<div class="row leftHeading">
 					<h1>SubGroups</h1>
 				</div>
 				<div class="row leftMenu">
 					<ul>
-						<li><a href="javascript:void(0)"><i class="fa fa-fw fa-handshake-o"></i>Mentors</a></li>
-						<li><a href="javascript:void(0)"><i class="fa fa-fw fa-calendar"></i>Events</a></li>
-						<li><a href="javascript:void(0)"><i class="fa fa-fw fa-briefcase"></i>Jobs</a></li>
-						<li>
+						<li id="subgroup1" onclick="iframeShifter(0)" class="getwhite">
+							<i class="fa fa-fw fa-handshake-o"></i>
+							<span>Mentors</span>
+						</li>
+						<li id="subgroup2" onclick="iframeShifter(1)" class="getwhite">
+							<i class="fa fa-fw fa-calendar"></i>
+							<span>Events</span>
+						</li>
+						<li id="subgroup3" onclick="iframeShifter(2)" class="getwhite">
+							<i class="fa fa-fw fa-briefcase"></i>
+							<span>Jobs</span>
+						</li>
+						<li onclick="iframeShifter(3)" id="subgroup4" class="getwhite">
 							<i class="fa fa-fw fa-graduation-cap"></i>
-							<select class="year-select" placeholder="Batch">
+							<select class="year-select">
 								<option></option>
 								<option value="1960">1960</option>
 								<option value="1965">1965</option>
@@ -78,33 +87,12 @@
 								<option value="2015">2015</option>
 							</select>
 						</li>
-						<!--li class="dropdown">
-							<div id="batchChooser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<a href="javascript:void(0)">
-								<i class="fa fa-fw fa-graduation-cap"></i>Batch
-							</a>
-							<span class="caret"></span>
-							</div>							
-							<ul class="dropdown-menu" aria-labelledby="batchChooser">
-								<input type="text"
-								<!-select class="year-select form-control">
-									<option value="1960">1960</option>
-									<option value="1965">1965</option>
-									<option value="1970">1970</option>
-									<option value="1975">1975</option>
-									<option value="1980">1980</option>
-									<option value="1985">1985</option>
-									<option value="1990">1990</option>
-									<option value="1995">1995</option>
-									<option value="2000">2000</option>
-									<option value="2005">2005</option>
-									<option value="2010">2010</option>
-									<option value="2015">2015</option>
-								</select->
-							</ul>
-						</li-->						
+					
 					</ul>
 				</div>
+			</div>
+			<div class="col-md-6 col-lg-6 col-xs-12 col-sm-7 rightPanel">
+				<iframe class="" scrolling="yes" name="iframe" id="iframe" src="http://localhost:8000/kcgroups/kc-team/3?thirdparty=hatch&type=both" frameborder="0" allowfullscreen style="width: 470px; height: 600.5px; border: 2px solid #38BB95;"></iframe>
 			</div>
 		</div>
 	</div>
