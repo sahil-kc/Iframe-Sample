@@ -15,19 +15,19 @@ var iframeShifter = function(index) {
 	switch(index) {
 		case 0: el.src = "http://localhost:8000/kcgroups/kc-team/3?thirdparty=hatch&type=both";
 
-			document.getElementById("subgroup1").style.background = "#666";
+			document.getElementById("subgroup1").style.background = "#3ebb95";
 			document.getElementById("subgroup1").style.color = "#fff";
 			break;
 		case 1: el.src = "http://localhost:8000/kcgroups/karmasphere/1?thirdparty=hatch&type=both";
-			document.getElementById("subgroup2").style.background = "#666";
+			document.getElementById("subgroup2").style.background = "#3ebb95";
 			document.getElementById("subgroup2").style.color = "#fff";
 			break;
 		case 2: el.src = "http://localhost:8000/kcgroups/logic-simplified/2?thirdparty=hatch&type=both";
-			document.getElementById("subgroup3").style.background = "#666";
+			document.getElementById("subgroup3").style.background = "#3ebb95";
 			document.getElementById("subgroup3").style.color = "#fff";
 			break;
 		case 3: el.src = "http://localhost:8000/kcgroups/hatch-international/7?thirdparty=hatch&type=both";
-			document.getElementById("subgroup4").style.background = "#666";
+			document.getElementById("subgroup4").style.background = "#3ebb95";
 			document.getElementById("subgroup4").style.color = "#fff";
 			break;
 	}
