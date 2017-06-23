@@ -1,10 +1,18 @@
 $karmagreen: #3ebb95;
 
 body {
+	&.restrict {
+		overflow-y: hidden !important;
+	}
 	overflow-x: hidden !important;
 	overflow-y: auto;
 	.navbar.navbar-default {
 		background: white;
+		button {
+			float: left;
+			border: none;
+			border-radius: 0px;
+		}
 		.navbar-brand {
 			img {
 				width: 140px;
@@ -33,6 +41,88 @@ body {
 				}
 			}
 		}
+		#mobileLogoDiv {
+			left: 35%;
+			position: absolute;
+			#mobileLogo {
+				display: none;
+				img {
+					width: 60%;
+				}
+				@media only screen and (max-width: 450px) {
+					display: block;
+				}
+			}
+		}
+	}
+	.sideNavOverlay {
+		z-index: 5;
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		background: black;
+		opacity: 0.5;
+		&.view {
+			display: block;
+		}
+	}
+	.sideNav {
+		border: 10px solid $karmagreen;
+		position: absolute;
+		z-index: 10;
+		height: 100%;
+		background: white;
+		width: 60%;
+		top: 0;
+		left: -60%;
+		transition: all 0.3s ease-out;
+		&.toggle {
+			left: 0%;
+		}
+		.img-center {
+			margin-top: 1em;
+			text-align: center;
+			img {
+				max-width: 70%;
+			}
+		}
+		.NavMainMenu {
+			margin-top: 1em;
+			ul {
+				list-style:none;
+				padding-left: 0px;
+				margin-bottom: 0px;
+				color: black;
+				li {
+					cursor: pointer;
+					font-size: 1.5em;
+					padding: 0.32em 0em 0.32em 2em;
+					text-decoration: none;
+					a {
+						color: black;
+						&:hover, &:visited, &:active {
+							color: black;
+							text-decoration: none;
+						}
+						i {
+								font-size: 22px;
+								margin-right: 0.5em;
+							}
+					}
+				}
+			}
+		}
+		.leftPanel {
+			.row {
+				margin-right: 0px;
+				margin-left: 0px;
+			}
+			color: black;
+			box-shadow: none !important;
+		}
+
 	}
 
 	#wrapper {
@@ -43,10 +133,21 @@ body {
 				color: white;
 				margin: 0px;
 			}
+			@media only screen and (max-width: 450px) {
+				text-align: center;	
+				margin-bottom: 1em;
+				h2 {
+					font-size: 1.3em;
+				}
+			}
 		}
 
 		.leftPanel {
-			
+			&#wasd {
+				@media only screen and (max-width: 768px) {
+					display: none;
+				}
+			}
 
 			box-shadow: 0px 5px 1em #666;
 			.leftHeading {
@@ -107,12 +208,7 @@ body {
 									color: white;
 								}
 							}
-						}
-						/*span.select2-selection__rendered {
-							background: $karmagreen;
-							color: white;
-						}*/
-						
+						}						
 					}
 				}
 				#greenid {

@@ -27,14 +27,19 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#iframesample" aria-expanded="false">
+				<button type="button" class="navbar-toggle" data-target="#iframesample">
 					<span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		        </button>
+		        <div id="mobileLogoDiv">
+		        <a href="http://karmacircles.com" id="mobileLogo">
+					<img alt="KarmaCircles" src="images/logo1.png">
+		        </a>
+		        </div>
 			</div>
-			<div class="collapse navbar-collapse" id="iframesample">
+			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-left">
 					<li><a href="javascript:void(0)">Home</a></li>
 					<li><a href="javascript:void(0)">About</a></li>
@@ -49,8 +54,73 @@
 			</div>
 		</div>
 	</nav>
+	<div class="sideNavOverlay"></div>
+	
 	<div class="container">
 		<div class="row"  id="wrapper">
+			
+			<div class="sideNav">
+			<div class="img-center">
+			<a href="http://karmacircles.com">
+				<img alt="KarmaCircles" src="images/logo1.png">
+		    </a>
+		    </div>
+				<div class="NavMainMenu">
+					<ul>
+						<li>
+							<a href="javascript:void(0)"><i class="fa fa-fw fa-home">
+								</i><span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><i class="fa fa-fw fa-info-circle">
+								</i><span>About</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="fa fa-fw fa-address-book-o"></i><span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="leftPanel">
+					<div class="leftMenu">
+						<ul>
+							<li id="subgroup1"  class="getwhite">
+								<i class="fa fa-fw fa-handshake-o"></i>
+								<span>Mentors</span>
+							</li>
+							<li id="subgroup2"  class="getwhite">
+								<i class="fa fa-fw fa-calendar"></i>
+								<span>Events</span>
+							</li>
+							<li id="subgroup3"  class="getwhite">
+								<i class="fa fa-fw fa-briefcase"></i>
+								<span>Jobs</span>
+							</li>
+							<li  id="subgroup4" class="getwhite">
+								<i class="fa fa-fw fa-graduation-cap"></i>
+								<select class="year-select">
+									<option></option>
+									<option value="1960">1960</option>
+									<option value="1965">1965</option>
+									<option value="1970">1970</option>
+									<option value="1975">1975</option>
+									<option value="1980">1980</option>
+									<option value="1985">1985</option>
+									<option value="1990">1990</option>
+									<option value="1995">1995</option>
+									<option value="2000">2000</option>
+									<option value="2005">2005</option>
+									<option value="2010">2010</option>
+									<option value="2015">2015</option>
+								</select>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 topRow">
 				<h2>KarmaCircles Mentoring Platform</h2>
 			</div>
@@ -58,19 +128,19 @@
 			<div class="col-md-6 col-lg-3 col-xs-12 col-sm-5 leftPanel" id="wasd">
 				<div class="row leftMenu">
 					<ul>
-						<li id="subgroup1" onclick="iframeShifter(0)" class="getwhite">
+						<li id="subgroup1"  class="getwhite">
 							<i class="fa fa-fw fa-handshake-o"></i>
 							<span>Mentors</span>
 						</li>
-						<li id="subgroup2" onclick="iframeShifter(1)" class="getwhite">
+						<li id="subgroup2"  class="getwhite">
 							<i class="fa fa-fw fa-calendar"></i>
 							<span>Events</span>
 						</li>
-						<li id="subgroup3" onclick="iframeShifter(2)" class="getwhite">
+						<li id="subgroup3"  class="getwhite">
 							<i class="fa fa-fw fa-briefcase"></i>
 							<span>Jobs</span>
 						</li>
-						<li onclick="iframeShifter(3)" id="subgroup4" class="getwhite">
+						<li  id="subgroup4" class="getwhite">
 							<i class="fa fa-fw fa-graduation-cap"></i>
 							<select class="year-select">
 								<option></option>
@@ -93,7 +163,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-9 col-xs-12 col-sm-7 rightPanel">
-				<iframe class="" scrolling="yes" name="iframe" id="iframe" src="http://localhost:8000/kcgroups/kc-team/3?thirdparty=hatch&type=both" frameborder="0" allowfullscreen style="width: 800px; height: 600.5px;"></iframe>
+				<iframe class="" scrolling="yes" name="iframe" id="iframe" src="http://localhost:8000/kcgroups/kc-team/3?thirdparty=hatch&type=both" frameborder="0" allowfullscreen style="width: 400px; height: 8600.5px;"></iframe>
 			</div>
 		</div>
 		
