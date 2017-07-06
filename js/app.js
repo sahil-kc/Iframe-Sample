@@ -49,12 +49,12 @@ $("document").ready(function(){
 		el = document.getElementById("iframe");	
 		
 		switch(parseInt(this.id.replace(/subgroup/, ""))) {
-			case 1: el.src = "http://52.27.60.33/kcgroups/kc-team/3?thirdparty=hatch&type=both";
+			case 1: el.src = "http://52.43.28.233/kcgroups/kc-team/3?thirdparty=hatch&type=both";
 							break;
-			case 2: el.src = "http://52.27.60.33/kcgroups/karmasphere/1?thirdparty=hatch&type=both";
+			case 2: el.src = "http://52.43.28.233/kcgroups/karmasphere/1?thirdparty=hatch&type=both";
 			
 				break;
-			case 3: el.src = "http://52.27.60.33/kcgroups/logic-simplified/2?thirdparty=hatch&type=both";
+			case 3: el.src = "http://52.43.28.233/kcgroups/logic-simplified/2?thirdparty=hatch&type=both";
 			
 				break;
 			case 4 : 
@@ -68,13 +68,13 @@ $("document").ready(function(){
 					var array = [];
 					array.push(parseInt(newString = ($(".select2-selection__rendered").text().replace('×',''))))
 					switch(array[0]) {
-						case 1960: el.src = "http://52.27.60.33/kcgroups/kc-team/3?thirdparty=hatch&type=both";
+						case 1960: el.src = "http://52.43.28.233/kcgroups/kc-team/3?thirdparty=hatch&type=both";
 							break;
-						case 1965: el.src = "http://52.27.60.33/kcgroups/karmasphere/1?thirdparty=hatch&type=both";
+						case 1965: el.src = "http://52.43.28.233/kcgroups/karmasphere/1?thirdparty=hatch&type=both";
 							break;
-						case 1970:el.src = "http://52.27.60.33/kcgroups/logic-simplified/2?thirdparty=hatch&type=both";
+						case 1970:el.src = "http://52.43.28.233/kcgroups/logic-simplified/2?thirdparty=hatch&type=both";
 							break;
-						default: el.src = "http://52.27.60.33/kcgroups/hatch-international/7?thirdparty=hatch&type=both";
+						default: el.src = "http://52.43.28.233/kcgroups/hatch-international/7?thirdparty=hatch&type=both";
 					}
 					flag = 1;
 					
